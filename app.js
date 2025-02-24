@@ -31,7 +31,7 @@ function insertSampleData() {
 function executeQuery() {
     const query = document.getElementById("queryInput").value.trim();
 
-    if (query.toUpperCase().startsWith("SELECT")) {
+    if (query.toUpperCase().includes("SELECT")) {
         // Handle SELECT query
         fetch(`${apiBaseUrl}/${encodeURIComponent(query)}`)
         .then((response) => response.json())
@@ -43,7 +43,7 @@ function executeQuery() {
             document.getElementById("response").innerHTML =
             message.errorExecutingSelectQuery;
         });
-    } else if (query.toUpperCase().startsWith("INSERT")) {
+    } else if (query.toUpperCase().includes("INSERT")) {
         // Handle INSERT query
         fetch(`${apiBaseUrl}/insert`, {
         method: "POST",
