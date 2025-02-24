@@ -70,4 +70,3 @@ This project is part of a lab assignment and is not open for external contributi
 ## Acknowledgments
 
 - This project was created as part of the COMP-4537 Internet Software Architecture course.
-- Thanks to [Your Name] and [Your Partner's Name] for collaborating on this lab assignment.
